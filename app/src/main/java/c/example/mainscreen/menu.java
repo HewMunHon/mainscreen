@@ -1,8 +1,10 @@
 package c.example.mainscreen;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +24,7 @@ public class menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        displayalert();
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
         //get current user
@@ -118,6 +121,18 @@ public class menu extends AppCompatActivity {
     public void signOut() {
         startActivity(new Intent(menu.this, login.class));
     }
+
+    private void displayalert() {
+        new AlertDialog.Builder(menu.this)
+                .setTitle("IMPORTANT INFORMATION")
+                .setMessage("Due to COVID-19, each customer can only book one service.")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                }).show();
+    }
+
     @Override
     public void onStart() {
         super.onStart();
