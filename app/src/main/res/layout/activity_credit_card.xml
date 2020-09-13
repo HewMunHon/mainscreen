@@ -38,16 +38,20 @@
 
         <TextView
             android:id="@+id/card_card-label"
-            android:layout_width="405dp"
-            android:layout_height="84dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="0dp"
-            android:background="@android:color/darker_gray"
+            android:layout_marginStart="104dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/round_button"
             android:gravity="center"
             android:text="Credit Card"
             android:textColor="@android:color/black"
-            android:textSize="30sp" />
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <TextView
             android:id="@+id/pay_amount_label"
@@ -62,7 +66,9 @@
             android:gravity="center"
             android:text="Payment Amount"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <TextView
             android:id="@+id/card_name_label"
@@ -77,7 +83,9 @@
             android:gravity="center"
             android:text="Name on card"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <TextView
             android:id="@+id/card_no_label"
@@ -88,11 +96,13 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="349dp"
+            android:layout_marginTop="347dp"
             android:gravity="center"
             android:text="Card number"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <TextView
             android:id="@+id/exp_date_label"
@@ -107,7 +117,8 @@
             android:gravity="center"
             android:text="Expiry Date"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/round_button"/>
 
         <EditText
             android:id="@+id/pay_amount"
@@ -191,7 +202,9 @@
             android:layout_marginStart="128dp"
             android:layout_marginLeft="128dp"
             android:layout_marginBottom="63dp"
-            android:text="Pay" />
+            android:text="Pay"
+            android:textSize="20dp"
+            android:background="@drawable/round_button"/>
 
 
     </RelativeLayout>

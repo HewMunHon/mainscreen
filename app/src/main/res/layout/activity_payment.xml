@@ -42,10 +42,12 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="26dp"
-            android:background="@color/colorGrey"
+            android:background="@drawable/round_button"
             android:text="@string/payment_text"
             android:textColor="@color/colorBlack"
-            android:textSize="35sp" />
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="40sp"
+            />
 
         <TextView
             android:id="@+id/order_detail_label"
@@ -56,7 +58,8 @@
             android:layout_marginTop="94dp"
             android:text="@string/order_detail_text"
             android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
+            android:textSize="28sp"
+            android:background="@drawable/round_button"/>
 
         <TextView
             android:id="@+id/name_label"
@@ -70,7 +73,8 @@
             android:layout_marginTop="26dp"
             android:text="@string/name_label"
             android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <TextView
             android:id="@+id/address_label"
@@ -84,7 +88,8 @@
             android:layout_marginTop="24dp"
             android:text="@string/address_label"
             android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <TextView
             android:id="@+id/note_label"
@@ -98,7 +103,8 @@
             android:layout_marginTop="27dp"
             android:text="@string/note_label"
             android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <TextView
             android:id="@+id/phone_label"
@@ -112,7 +118,8 @@
             android:layout_marginTop="28dp"
             android:text="@string/phones_label"
             android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <EditText
             android:id="@+id/PersonNameText"
@@ -207,7 +214,9 @@
             android:layout_marginBottom="268dp"
             android:text="@string/payment_method_label"
             android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:background="@drawable/round_button"/>
 
         <RadioGroup
             android:layout_width="302dp"
@@ -217,14 +226,16 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="38dp"
             android:layout_marginLeft="38dp"
-            android:layout_marginBottom="157dp">
+            android:layout_marginBottom="157dp"
+            android:background="@drawable/round_button">
 
             <RadioButton
                 android:id="@+id/radCOD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/cash_on_delivery_radioButton" />
+                android:text="@string/cash_on_delivery_radioButton"
+                android:fontFamily="sans-serif-smallcaps"/>
 
             <RadioButton
                 android:id="@+id/radPaypal"
@@ -234,14 +245,16 @@
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/paypal_radioButton" />
+                android:text="@string/paypal_radioButton"
+                android:fontFamily="sans-serif-smallcaps"/>
 
             <RadioButton
                 android:id="@+id/radCredit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/credit_card_text" />
+                android:text="@string/credit_card_text"
+                android:fontFamily="sans-serif-smallcaps"/>
 
         </RadioGroup>
 
@@ -255,6 +268,7 @@
             android:layout_marginEnd="127dp"
             android:layout_marginRight="127dp"
             android:layout_marginBottom="103dp"
+            android:background="@drawable/round_button"
             android:text="@string/btnOk" />
 
         <Button
@@ -266,7 +280,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="25dp"
             android:layout_marginRight="25dp"
-            android:layout_marginBottom="104dp"
+            android:layout_marginBottom="103dp"
+            android:background="@drawable/round_button"
             android:text="@string/btnCancel" />
 
 

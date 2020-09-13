@@ -10,6 +10,7 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -67,7 +68,8 @@
                             android:background="@android:color/black"
                             android:text="@string/about_us"
                             android:textColor="@android:color/white"
-                            android:textSize="18dp" />
+                            android:textSize="18dp"
+                            android:fontFamily="sans-serif-smallcaps"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -79,9 +81,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="64dp"
                             android:text="@string/come_get_to_know_us"
-                            android:textColor="@android:color/white" />
+                            android:textColor="@android:color/white"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
 
-                    </LinearLayout>
+                    </LinearLayout>00
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -121,13 +125,14 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
                             android:textSize="18dp"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_margin="2dp"
-                            android:background="@android:color/black" />
+                            android:background="@color/lightgray" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -136,7 +141,9 @@
                             android:text="@string/list"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -186,7 +193,8 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
                             android:textSize="18dp"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -200,7 +208,9 @@
                             android:text="@string/book_services"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -241,7 +251,8 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
                             android:textSize="18dp"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -255,7 +266,9 @@
                             android:text="@string/history_pay"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -307,7 +320,8 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
                             android:textSize="18dp"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -321,7 +335,9 @@
                             android:text="@string/contact"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -362,7 +378,8 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
                             android:textSize="18dp"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -376,8 +393,132 @@
                             android:text="@string/f_a_q"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
 
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@android:color/black"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="104dp"
+                                android:src="@drawable/time"
+                                android:id="@+id/booking_schedule"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/schedule"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18dp"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="2dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="64dp"
+                            android:text="@string/book_services"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@android:color/black"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/feedback"
+                                android:layout_width="135dp"
+                                android:layout_height="104dp"
+                                android:src="@drawable/staff_logo" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/feedback"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18dp"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="2dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="64dp"
+                            android:text="@string/staff_feedback"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -425,7 +566,8 @@
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
                             android:textSize="18dp"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"/>
 
                         <View
                             android:layout_width="match_parent"
@@ -439,12 +581,27 @@
                             android:text="@string/logout"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="16dp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-
             </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="submit"
+                    android:src="@drawable/qr" />
+            </FrameLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

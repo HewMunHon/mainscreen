@@ -46,7 +46,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/about_htl"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16dp"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -58,7 +60,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/hair_cut"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16dp"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -70,7 +74,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/hair_color"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16dp"/>
         </LinearLayout>
     </ScrollView>
 

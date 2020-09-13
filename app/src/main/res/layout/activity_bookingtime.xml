@@ -45,8 +45,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="33dp"
             android:layout_marginLeft="33dp"
-            android:layout_marginTop="68dp" />
-
+            android:layout_marginTop="68dp"
+            android:background="@drawable/round_button"/>
 
 
         <TextView
@@ -56,14 +56,14 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
             android:layout_marginTop="14dp"
-            android:background="@android:color/darker_gray"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="@string/Booking_text"
             android:textColor="@android:color/background_dark"
-            android:textSize="30sp" />
-
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/Time_label"
@@ -77,17 +77,19 @@
             android:layout_marginBottom="263dp"
             android:text="@string/time_text"
             android:textColor="@android:color/background_dark"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-smallcaps"/>
 
         <RadioGroup
-            android:layout_width="202dp"
+            android:layout_width="201dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="84dp"
-            android:layout_marginLeft="84dp"
-            android:layout_marginBottom="71dp">
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginBottom="63dp"
+            android:background="@drawable/round_button">
 
             <RadioButton
                 android:id="@+id/rad1"
@@ -143,6 +145,7 @@
             android:layout_marginEnd="145dp"
             android:layout_marginRight="145dp"
             android:layout_marginBottom="12dp"
+            android:background="@drawable/round_button"
             android:text="@string/ok_text" />
 
         <Button
@@ -156,7 +159,10 @@
             android:layout_marginRight="31dp"
             android:layout_marginBottom="13dp"
             android:text="@string/cancle_text"
-            tools:text="@string/cancle_text" />
+            tools:text="@string/cancle_text"
+            android:background="@drawable/round_button"/>
+
+
 
     </RelativeLayout>
 

@@ -79,7 +79,6 @@ tools:context=".MainActivity">
             android:layout_marginRight="227dp"
             android:layout_marginBottom="115dp"
             android:background="@drawable/element_outlines"
-
             android:text="Login"
             android:textColor="@color/colorBlack"
             android:textSize="12dp"

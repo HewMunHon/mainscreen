@@ -11,11 +11,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class menu extends AppCompatActivity {
-    private ImageView image, image1, image2, image3, image4, image5, image6;
+    private ImageView image, image1, image2, image3, image4, image5, image6, image7, image8, image9;
     private TextView email;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
@@ -24,6 +25,15 @@ public class menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qr();
+            }
+        });
+
         displayalert();
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
@@ -48,6 +58,9 @@ public class menu extends AppCompatActivity {
         image4= (ImageView) findViewById(R.id.booking);
         image5= (ImageView) findViewById(R.id.faq);
         image6= (ImageView) findViewById(R.id.history);
+        image7= (ImageView) findViewById(R.id.feedback);
+       // image8= (ImageView) findViewById(R.id.qr);
+        image9= (ImageView) findViewById(R.id.booking_schedule);
         email = (TextView) findViewById(R.id.email);
 
         email.setText(user.getEmail());
@@ -88,15 +101,40 @@ public class menu extends AppCompatActivity {
             }
         });
 
-        //image6.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-            //public void onClick(View view) {
-              //  history();
+        image6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                history();
+            }
+        });
+
+        image7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                feedback();
+            }
+        });
+       // image8.setOnClickListener(new View.OnClickListener() {
+         //   @Override
+           // public void onClick(View view) {
+             //   qr();
             //}
         //});
+        image9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                schedule();
+            }
+        });
     }
+    //schedule
+    public void schedule(){startActivity(new Intent(menu.this, booking_schedule.class));}
+    //qr
+    public void qr(){startActivity(new Intent(menu.this, QR_scan.class));}
+    //feedback
+    public void feedback(){startActivity(new Intent(menu.this, staff.class));}
     //history
-    //
+    public void history(){startActivity(new Intent(menu.this, payment_history.class));}
     //faq
     public void Faq(){
         startActivity(new Intent(menu.this, FAQ.class));
@@ -120,6 +158,7 @@ public class menu extends AppCompatActivity {
     //sign out method
     public void signOut() {
         startActivity(new Intent(menu.this, login.class));
+        finish();
     }
 
     private void displayalert() {

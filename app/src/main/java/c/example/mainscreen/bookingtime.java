@@ -94,11 +94,6 @@ public class bookingtime extends AppCompatActivity {
                         if (time1.isChecked()) {
                             booking.setTime(t1);
                             reference.child(String.valueOf(i + 1)).setValue(booking);
-
-                        }
-                        if (time1.isChecked()) {
-                            booking.setTime(t1);
-                            reference.child(String.valueOf(i + 1)).setValue(booking);
                         }
                         if (time2.isChecked()) {
                             booking.setTime(t2);
